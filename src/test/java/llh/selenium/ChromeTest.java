@@ -25,7 +25,7 @@ public class ChromeTest {
   private static ChromeDriverService service;
   private WebDriver driver;
   private StringBuffer verificationErrors = new StringBuffer();
-  private static final String driverPath = "D:/Ecllipse/my-code/Java/selenium/chromedriver.exe";
+  private static final String driverPath = "C:/Users/grand/Desktop/Selenium/chromedriver.exe";
 
   @BeforeClass
   public static void createAndStartService() throws IOException {
@@ -78,7 +78,7 @@ public class ChromeTest {
   }
   
   @Test
-  public void testSelenium() throws Exception {
+  public void testFCUTeacher() throws Exception {
     driver.get("http://www.fcu.edu.tw/wSite/mp?mp=1");
     driver.findElement(By.linkText("學術資源")).click();
     driver.findElement(By.cssSelector("div.np > ul > li > a[title=\"院系所-單位列表\"]")).click();
@@ -95,7 +95,7 @@ public class ChromeTest {
 
   
   @Test
-  public void testSeleniumTest6() throws Exception {
+  public void testWiki() throws Exception {
     driver.get("https://en.wikipedia.org/wiki/Main_Page");
     driver.findElement(By.id("searchInput")).clear();
     driver.findElement(By.id("searchInput")).sendKeys("Selenium ide");
